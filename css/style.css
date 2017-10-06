@@ -1,0 +1,246 @@
+html,body{
+	height: 100%;
+	margin: 0 auto;
+}
+body{
+	background-image: url('../i/body.png');	
+    background-repeat: round;
+    background-attachment: fixed;
+	font-size: 1.5em;
+    font-family: Verdana, Arial;
+}
+a{
+	color: #000;
+}
+#container, #footer{
+	width: 1100px;
+	margin: 0 auto;
+	padding:0 10px;
+}
+#container{
+	min-height: 100%;
+	background: #f7f6f4;
+	background: linear-gradient(to top, #ebe4df 0%,#f7f6f4 25%,#f7f6f4 75%,#ebe4df 100%);
+	border-radius: 0 0 50px 50px;
+}
+	#header>div{
+		padding: 30px 0;
+		text-align: center;
+	}
+	#header a, #menu a{
+		text-decoration: none;
+	}
+#menu{
+	height: 60px;
+}
+	#menu li{
+		list-style: none;
+	}
+	#menu>ul{
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		font-size: 1.2em;
+	}
+	    #menu>ul>li{
+		    display: inline-block;
+		    padding: 10px 50px;
+	    }
+	    #menu>ul>li:hover{
+		    background: #ebe4df;
+		    background: rgba(235,228,223,0.9);
+		    border-radius: 50%;
+	    }
+            #menu .portfolio{
+                position: relative;
+            }
+            #menu .portfolio>ul{
+                display: none;
+                position: absolute;
+				margin-top: 10px;
+                padding: 0 2px 3px;
+		        background: #f7f6f4;
+		        background: rgba(247,246,244,0.7);
+				font-size: 0.7em;
+            }
+            #menu .portfolio:hover>ul, #menu .portfolio>ul:hover{
+                display: block;
+            }
+                #menu .portfolio>ul>li{
+                    padding: 0 10px;
+                }
+                #menu .portfolio>ul>li:hover{
+		            background: #ebe4df;
+		            background: rgba(235,228,223,0.9);
+		            border-radius: 50%;
+                }
+	.indent{
+		height: 100px
+	}
+#footer{
+	height: 90px;
+	margin-top:-90px;
+}
+	#footer>div{
+		display: inline-block;
+		padding: 0 10px 20px;
+		font-size: 0.6em;
+		line-height: 1.5em;
+	}
+	#footer div:last-of-type{
+		float: right;
+	}
+		#footer div > a{
+			margin-left: 20px;
+		}
+
+/*Главная*/
+    .presentation,.samples{
+        display: inline-block;
+    }
+    .presentation{
+        width: 920px;
+    }
+    .samples{
+        width: 160px;
+        height: 620px;
+        float: right;
+        overflow-y: scroll;
+		scrollbar-3dlight-color: #f7f6f4; 
+		scrollbar-arrow-color: #988;
+		scrollbar-highlight-color: #f7f6f4;
+		scrollbar-face-color: #988;
+		scrollbar-shadow-color: #f7f6f4;
+		scrollbar-darkshadow-color: #f7f6f4;
+		scrollbar-track-color: #f7f6f4;
+		}
+			.samples::-webkit-scrollbar{
+				width: 12px;
+			}
+			.samples::-webkit-scrollbar-thumb{
+				background-color: #988;
+			}
+			.samples::-webkit-scrollbar-track{
+				border-width: 0;
+			}
+	    .presentation>img{
+		    display: block;
+            height: 600px;
+            margin: 10px auto;
+	    }
+	    .presentation img:last-of-type{
+		    opacity: 0; 
+			filter: alpha(opacity=0); 
+			margin-top: -610px;
+	    }
+        .samples>img{
+		    display: block;
+		    width: 140px;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+		.welcome{
+			padding: 20px 40px;
+			font-family: Georgia;
+			font-style: italic;
+			text-align: justify;
+			text-indent: 2em;
+			word-spacing: 0.5em;
+		}
+			.welcome>img{
+				float: left;
+				width: 200px;
+				margin: 20px 30px 0 0;
+			}
+			
+/*Контакты*/
+    #contacts>img{
+	    width: 500px;
+    }	
+    #contacts>div{
+	    float: right;
+	    padding-right: 100px;
+	    font-size: 0.8em;
+    }
+	
+/*Портфолио*/
+#portfolio{
+    text-align: center;
+}		
+    #portfolio>div{
+        display: inline-block;
+        margin: 0 0 20px 10px;
+        text-align: center;
+    }		
+        #portfolio img{
+            height: 200px;
+        }
+		
+/*Галереи*/
+    #gallery>div {
+        text-align: justify;
+    }
+    .gallery_img  {		
+		display: inline-block;
+        height: 240px;
+        width: 360px;
+		overflow:hidden;
+		margin-left: 5px;
+    }
+    #gallery img{        
+        width: 100%;
+    }
+
+/*Админ*/
+#adminlink {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 9999;
+    background-color: lightblue;
+    opacity: 0.8;
+    padding: 5px 20px;
+    border-radius: 50%;
+    background: #ebe4df;
+    background: rgba(220,205,190,0.8);
+}
+#adminlink:hover{
+    opacity: 1;
+	background: #ebe4df;
+	background: rgba(220,205,190,1);
+}
+	form>table{
+		margin: 0 auto;
+		min-width: 60%;
+		border-spacing: 2px;
+		border: 6px double #f7f6f4;
+		font-size: 0.8em;
+		background-color: #dfdfdf;
+	}
+		form>table input, form>table select, form>table textarea{
+			box-sizing: border-box;
+			width: 100%;
+			min-height: 30px;
+			padding: 5px 10px;
+			font-size: 1em;
+		}
+		form>table input[type="radio"],form>table input[type="checkbox"]{
+			width: 25px;
+			min-height: 25px;
+		}
+		form>table textarea{
+			min-height: 160px;
+		}
+		form>table td, form>table th{
+			text-align:center;
+			background-color: #f7f6f4;
+		}
+	.error{
+		color: red;
+		font-size: 0.6em;
+	}
+	.message{
+		color: green;
+		font-size: 0.6em;
+	}
+				
